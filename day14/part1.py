@@ -13,11 +13,11 @@ with open('input.txt', 'r') as file:
         })
 print(robots)
 
-# 7x11 grid
+# 101x103 grid
 # 0,0 is top left
-len_x = 11
-len_y = 7
-initial_map = [[0 for _ in range(11)] for _ in range(7)]
+len_x = 101
+len_y = 103
+initial_map = [[0 for _ in range(len_x)] for _ in range(len_y)]
 
 for robot in robots:
     initial_map[robot['p'][1]][robot['p'][0]] += 1
